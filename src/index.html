@@ -4,14 +4,461 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ocean Breeze Guest - Beautiful beachfront apartment rental in Hikkaduwa, Sri Lanka. 2 bedrooms, beach access, perfect for your tropical vacation.">
+  <meta name="keywords" content="Hikkaduwa, Sri Lanka, vacation rental, beach apartment, Airbnb, Galle, beachfront">
+  <meta name="author" content="Ocean Breeze Guest">
+  <meta property="og:title" content="Ocean Breeze Guest - Beachfront Paradise in Hikkaduwa">
+  <meta property="og:description" content="Experience the perfect Sri Lankan getaway at our beachfront apartment in Hikkaduwa.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>Ocean Breeze Guest | Beachfront Apartment in Hikkaduwa, Sri Lanka</title>
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <i class="fas fa-umbrella-beach"></i>
+        <span>Ocean Breeze Guest</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#rules" class="nav-link">House Rules</a></li>
+        <li><a href="#attractions" class="nav-link">Attractions</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="https://airbnb.com" target="_blank" class="nav-link btn-book">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-carousel">
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920')"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1920')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Ocean Breeze Guest</h1>
+      <p class="hero-subtitle"><i class="fas fa-map-marker-alt"></i> Hikkaduwa, Galle District, Sri Lanka</p>
+      <div class="hero-badges">
+        <span class="badge"><i class="fas fa-bed"></i> 2 Bedrooms</span>
+        <span class="badge"><i class="fas fa-bath"></i> 2 Bathrooms</span>
+        <span class="badge"><i class="fas fa-users"></i> 6 Guests</span>
+        <span class="badge"><i class="fas fa-wifi"></i> Free WiFi</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="https://airbnb.com" target="_blank" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Now</a>
+        <a href="#gallery" class="btn btn-secondary"><i class="fas fa-images"></i> View Gallery</a>
+      </div>
+    </div>
+    <div class="hero-carousel-dots">
+      <span class="carousel-dot active" data-slide="0"></span>
+      <span class="carousel-dot" data-slide="1"></span>
+      <span class="carousel-dot" data-slide="2"></span>
+      <span class="carousel-dot" data-slide="3"></span>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Photo Gallery</h2>
+      <p class="section-subtitle">Take a virtual tour of our beachfront paradise</p>
+      
+      <div class="gallery-main">
+        <button class="gallery-nav gallery-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+        <div class="gallery-carousel">
+          <div class="gallery-slide active">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200" alt="Bedroom with ocean view" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200" alt="Living room" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200" alt="Kitchen" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200" alt="Beach view" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200" alt="Exterior view" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?w=1200" alt="Bathroom" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200" alt="Second bedroom" loading="lazy">
+          </div>
+          <div class="gallery-slide">
+            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1200" alt="Balcony with ocean view" loading="lazy">
+          </div>
+        </div>
+        <button class="gallery-nav gallery-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+        <button class="gallery-play-pause" aria-label="Pause slideshow"><i class="fas fa-pause"></i></button>
+      </div>
+      
+      <div class="gallery-dots">
+        <span class="gallery-dot active" data-slide="0"></span>
+        <span class="gallery-dot" data-slide="1"></span>
+        <span class="gallery-dot" data-slide="2"></span>
+        <span class="gallery-dot" data-slide="3"></span>
+        <span class="gallery-dot" data-slide="4"></span>
+        <span class="gallery-dot" data-slide="5"></span>
+        <span class="gallery-dot" data-slide="6"></span>
+        <span class="gallery-dot" data-slide="7"></span>
+      </div>
+      
+      <div class="gallery-thumbnails">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=200" alt="Bedroom" class="thumbnail active" data-slide="0">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=200" alt="Living room" class="thumbnail" data-slide="1">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=200" alt="Kitchen" class="thumbnail" data-slide="2">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=200" alt="Beach" class="thumbnail" data-slide="3">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=200" alt="Exterior" class="thumbnail" data-slide="4">
+        <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?w=200" alt="Bathroom" class="thumbnail" data-slide="5">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=200" alt="Bedroom 2" class="thumbnail" data-slide="6">
+        <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=200" alt="Balcony" class="thumbnail" data-slide="7">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Our Property</h2>
+      <p class="section-subtitle">Your perfect beachfront getaway awaits</p>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <div class="rating-badges">
+            <span class="rating-badge"><i class="fas fa-star"></i> 4.9 Rating</span>
+            <span class="rating-badge superhost"><i class="fas fa-award"></i> Superhost</span>
+            <span class="rating-badge verified"><i class="fas fa-check-circle"></i> Verified</span>
+          </div>
+          <h3>Welcome to Ocean Breeze Guest</h3>
+          <p>Experience the magic of Sri Lanka's stunning coastline at our beautifully appointed beachfront apartment in Hikkaduwa. Just a 2-minute walk from pristine golden sands, our property offers the perfect blend of tropical charm and modern comfort.</p>
+          <p>Whether you're here for surfing, snorkeling at the famous coral reefs, exploring the historic Galle Fort, or simply relaxing with the sound of waves, Ocean Breeze Guest is your ideal home base for an unforgettable Sri Lankan adventure.</p>
+          <p>Our spacious 2-bedroom apartment comfortably accommodates up to 6 guests, featuring a fully equipped kitchen, high-speed WiFi, air conditioning, and a private balcony with stunning ocean views.</p>
+        </div>
+        
+        <div class="amenities">
+          <h3><i class="fas fa-concierge-bell"></i> Amenities</h3>
+          <div class="amenities-grid">
+            <div class="amenity-item">
+              <i class="fas fa-bed"></i>
+              <span>2 Bedrooms</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-bath"></i>
+              <span>2 Bathrooms</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-utensils"></i>
+              <span>Full Kitchen</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-wifi"></i>
+              <span>High-Speed WiFi</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-snowflake"></i>
+              <span>Air Conditioning</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-tv"></i>
+              <span>Smart TV (Netflix)</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-car"></i>
+              <span>Free Parking</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-umbrella-beach"></i>
+              <span>Beach Access</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-hot-tub"></i>
+              <span>Hot Water</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-soap"></i>
+              <span>Washer/Dryer</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Safety Features</span>
+            </div>
+            <div class="amenity-item">
+              <i class="fas fa-headset"></i>
+              <span>24/7 Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- House Rules Section -->
+  <section class="section rules" id="rules">
+    <div class="container">
+      <h2 class="section-title">House Rules</h2>
+      <p class="section-subtitle">Please respect our property and neighbors</p>
+      
+      <div class="rules-grid">
+        <div class="rule-card">
+          <i class="fas fa-sign-in-alt"></i>
+          <h4>Check-in</h4>
+          <p>2:00 PM - 10:00 PM</p>
+        </div>
+        <div class="rule-card">
+          <i class="fas fa-sign-out-alt"></i>
+          <h4>Check-out</h4>
+          <p>11:00 AM</p>
+        </div>
+        <div class="rule-card">
+          <i class="fas fa-users"></i>
+          <h4>Max Guests</h4>
+          <p>6 guests maximum</p>
+        </div>
+        <div class="rule-card">
+          <i class="fas fa-smoking-ban"></i>
+          <h4>No Smoking</h4>
+          <p>No smoking inside</p>
+        </div>
+        <div class="rule-card">
+          <i class="fas fa-paw"></i>
+          <h4>Pets</h4>
+          <p>Considered on request</p>
+        </div>
+        <div class="rule-card">
+          <i class="fas fa-moon"></i>
+          <h4>Quiet Hours</h4>
+          <p>10 PM - 8 AM</p>
+        </div>
+      </div>
+      
+      <div class="cancellation-policy">
+        <h3><i class="fas fa-info-circle"></i> Cancellation Policy</h3>
+        <p>Free cancellation up to 48 hours before check-in. After that, cancel before check-in and get a 50% refund, minus the first night and service fee.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nearby Attractions Section -->
+  <section class="section attractions" id="attractions">
+    <div class="container">
+      <h2 class="section-title">Nearby Attractions</h2>
+      <p class="section-subtitle">Explore the best of Hikkaduwa and beyond</p>
+      
+      <div class="attractions-grid">
+        <div class="attraction-card">
+          <div class="attraction-icon"><i class="fas fa-umbrella-beach"></i></div>
+          <h4>Hikkaduwa Beach</h4>
+          <p class="distance"><i class="fas fa-walking"></i> 2 min walk</p>
+          <p class="activities">Swimming, Surfing</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-icon"><i class="fas fa-fish"></i></div>
+          <h4>Coral Reefs</h4>
+          <p class="distance"><i class="fas fa-ship"></i> 5 min boat</p>
+          <p class="activities">Snorkeling, Diving</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-icon"><i class="fas fa-landmark"></i></div>
+          <h4>Galle Fort (UNESCO)</h4>
+          <p class="distance"><i class="fas fa-car"></i> 20 min drive</p>
+          <p class="activities">History, Photography</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-icon"><i class="fas fa-turtle"></i></div>
+          <h4>Turtle Hatcheries</h4>
+          <p class="distance"><i class="fas fa-car"></i> 10 min drive</p>
+          <p class="activities">Conservation, Family</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-icon"><i class="fas fa-utensils"></i></div>
+          <h4>Local Restaurants</h4>
+          <p class="distance"><i class="fas fa-walking"></i> 5 min walk</p>
+          <p class="activities">Dining, Seafood</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-icon"><i class="fas fa-water"></i></div>
+          <h4>Surfing Spots</h4>
+          <p class="distance"><i class="fas fa-walking"></i> 3 min walk</p>
+          <p class="activities">Surfing, Water Sports</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-icon"><i class="fas fa-place-of-worship"></i></div>
+          <h4>Buddhist Temples</h4>
+          <p class="distance"><i class="fas fa-car"></i> 15 min drive</p>
+          <p class="activities">Culture, Temples</p>
+        </div>
+        <div class="attraction-card">
+          <div class="attraction-icon"><i class="fas fa-train"></i></div>
+          <h4>Train Station</h4>
+          <p class="distance"><i class="fas fa-walking"></i> 10 min walk</p>
+          <p class="activities">Scenic Coastal Journey</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">We'd love to hear from you</p>
+      
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>Phone</strong>
+              <p>+94 77 123 4567</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>+94 77 123 4567</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p>stay@oceanbreezeguest.lk</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Address</strong>
+              <p>123 Beach Road, Hikkaduwa,<br>Galle District, Sri Lanka 80240</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://airbnb.com" target="_blank" class="social-link" aria-label="Airbnb"><i class="fab fa-airbnb"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form-wrapper">
+          <h3>Send Us a Message</h3>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+94 77 XXX XXXX">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin">
+              </div>
+              <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input type="date" id="checkout" name="checkout">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests">
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell us about your trip..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i> Send Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="map-container">
+        <h3><i class="fas fa-map"></i> Our Location</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31736.61254814494!2d80.08500499999999!3d6.1400975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae17152f76e74cf%3A0x7eb3f35b86364e5f!2sHikkaduwa!5e0!3m2!1sen!2slk!4v1699000000000!5m2!1sen!2slk" 
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius: 12px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ocean Breeze Guest Location">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3><i class="fas fa-umbrella-beach"></i> Ocean Breeze Guest</h3>
+          <p>Your perfect beachfront getaway in Hikkaduwa, Sri Lanka.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-phone"></i> +94 77 123 4567</p>
+          <p><i class="fas fa-envelope"></i> stay@oceanbreezeguest.lk</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ocean Breeze Guest. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color: #ff6b6b;"></i> for your perfect Sri Lankan vacation</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
