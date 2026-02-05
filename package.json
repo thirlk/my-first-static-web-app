@@ -1,7 +1,9 @@
 {
-  "name": "vanilla-basic",
+  "name": "ocean-breeze-guest",
   "version": "1.0.0",
-  "scripts": { 
+  "scripts": {
+    "build": "echo 'No build required for static site'",
+    "build:azure": "echo 'No build required for static site'",
     "start": "sirv ./src public --cors --single --no-clear --port 8000"
   }
 }
